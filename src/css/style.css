@@ -1,0 +1,98 @@
+body{
+	font-family: 'Unbounded', cursive;
+	background: #F9F9F9;
+}
+
+.cabecalho{
+	background: #0d2329;
+	
+}
+header img{
+	padding: 0px 0px 0px 280px;
+	margin: 0px 0px 0px 280px;
+}
+
+h1{
+	color: white;
+	padding: 20px 10px 0px 60px;
+	margin: 20px 10px 0px 60px;
+	display: block;
+	font-size: 23px;
+	text-align: center;
+}
+
+.corpo-menu{
+	padding: 50px 20px 50px 20px;
+	margin: 50px 20px 50px 20px;
+	text-align: center;
+}
+
+.main{
+	display: block;
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+}
+
+div button{
+	font-family: 'Unbounded', cursive;
+	
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	width: 300px;
+	height: 100px;
+	font-size: 16px;
+	font-weight: bold;
+
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 2s all;
+}
+
+div button:hover{
+	background: #CFFF5D;
+	transform: scale(1.1);
+}
+
+
+/* pagina cadastro-de-materiais */
+
+.titulo{
+	padding: 20px 20px 20px 20px;
+	margin: 20px 20px 20px 20px;
+	text-align: center;
+	font-size: 35px;
+}
+
+.secao-dados{
+	padding: 10px;
+	margin: 10px;
+}
+
+.ficha-dados{
+	padding: 10px;
+	margin: 10px;
+}
+
+div label{
+	padding: 10px 10px 10px 10px;
+	margin: 10px 10px 10px 10px;
+	display: inline;
+}
+div input{
+	padding: 10px 0px 10px 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+
+#iDesc{
+	display: inline;
+	width: 600px;
+	height: 30px;
+	font-size: left;
+}
+
+.footer{
+	padding: 30px 10px 30px 10px;
+	margin: 30px 10px 30px 10px;
+}
