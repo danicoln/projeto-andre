@@ -15,15 +15,81 @@
 	<body>
 		<header>
 			<h2 class="titulo">Registro de Entrada de Materiais</h2>
-
 		</header>
 
-		<section class="secao-entrada-materiais">
-			<div class="relatorio-dados"> <!--criar uma tabela -->
-				<div>
+		<main>
+			<section class="secao-entrada-materiais">
 					
+				<div class="card">
+					<div class="lineInput">
+						<label>NOME</label>
+						<input type="text" id="produto" placeholder="nome do material">
+					</div>
+
+					<div class="lineInput">
+						<label>DESCRIÇÃO</label>
+						<input type="text" id="descricao" placeholder="Descrição do material">
+					</div>
+
+					
+					<div class="lineInput">
+						<label>QUANTIDADE</label>
+						<input type="text" id="qtde" placeholder="00,00">
+					</div>
+
+					<div class="lineInput">
+						<label>MEDIDA</label>
+						<input type="text" id="medida" placeholder="pc / kg / gr / lt / ml">
+					</div>
+
+					<div class="lineInput">
+						<label>FORNECEDOR</label>
+						<input type="text" id="fornecedor" placeholder="Nome do fornecedor">
+					</div>
+
+					<div class="lineInput">
+						<label>VALOR UNITÁRIO</label>
+						<input type="text" id="vlrUnit" placeholder="Valor unitário">
+					</div>
+
+					<!--<div class="lineInput">
+						<label>VALOR TOTAL</label>
+						<textarea type="text"  disabled></textarea> 
+					</div>
+				 --> <!-- disabled ou readonly verificar-->
+				
+					<button onclick="produto.salvar()">Salvar</button>
+					<button onclick="produto.cancelar()">Excluir</button>
+					<a href="index.html"><button class="voltar">Voltar</button></a>
+				
+					<section class="content">
+
+						<table>
+							<thead>
+								<th>ID</th>
+								<th>NOME</th>
+								<th>DESCRIÇÃO</th>
+								<th>QUANTIDADE</th>
+								<th>MEDIDA</th>
+								<th>FORNECEDOR</th>
+								<th>VALOR UNITÁRIO</th>
+								<th>VALOR TOTAL</th>
+							</thead>
+							<tbody id="tbody">
+								
+							</tbody>
+						</table>
+					</section>
 				</div>
-			</div>
+			</section>
+		</main>
+
+		<script src="src/js/script.js"></script>
+
+		<section class="footer">
+			<footer>
+				&copy; Desenvolvido por danicoln. Todos os direitos reservados.
+			</footer>
 		</section>
 
 	</body>
