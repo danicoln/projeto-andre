@@ -33,7 +33,7 @@ h1{
 	margin: 10px 10px 10px 10px;
 }
 
-div button{
+button{
 	font-family: 'Unbounded', cursive;
 	
 	padding: 10px 10px 10px 10px;
@@ -49,7 +49,7 @@ div button{
 	transition: 2s all;
 }
 
-div button:hover{
+button:hover{
 	background: #CFFF5D;
 	transform: scale(1.1);
 }
@@ -82,6 +82,19 @@ div label{
 div input{
 	padding: 10px 0px 10px 0px;
 	margin: 10px 0px 10px 0px;
+	text-align: center;
+	outline: 0;
+}
+
+textarea{
+	text-align: center;
+	resize: none;
+	border: none;
+
+	display: grid;
+	margin-bottom: 10px;
+	width: 600px;
+
 }
 
 
@@ -90,9 +103,48 @@ div input{
 	width: 600px;
 	height: 30px;
 	font-size: left;
+	margin-top: 15px;
+	
 }
 
 .footer{
 	padding: 30px 10px 30px 10px;
 	margin: 30px 10px 30px 10px;
 }
+
+.card{
+	background: #fafbfc;
+	border: 1px solid #CCC;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.lineInput{
+	display: grid;
+	margin-bottom: 10px;
+	width: 600px;
+}
+
+.content{
+	margin-top: 15px;
+}
+
+table{
+	border-collapse: collapse;
+	border: 2px solid #CCC;
+	width: 100%;
+}
+
+table th{
+	background-color: #E4EBFA;
+	border: 2px solid #CCC;
+}
+
+
+
+table th, td{
+	border: 2px solid #CCC;
+	padding: 5px 5px;
+	text-align: center;
+}
+
