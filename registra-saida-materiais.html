@@ -18,5 +18,50 @@
 
 		</header>
 
+		<main>
+			<section class="secao-saida-materiais">
+					
+				<div class="card">
+					<div class="lineInput">
+						<label>NOME</label>
+						<input type="text" id="produto" placeholder="nome do material">
+					</div>
+
+					<div class="lineInput">
+						<label>DESCRIÇÃO</label>
+						<textarea type="text" id="produto" disbled></textarea>
+					</div>
+
+					
+					<div class="lineInput">
+						<label>QUANTIDADE</label>
+						<input type="text" id="produto" placeholder="00,00">
+					</div>
+
+					<div class="lineInput">
+						<label>MEDIDA</label>
+						<textarea type="text" id="produto" disabled></textarea>
+					</div>
+
+					<div class="lineInput">
+						<label>VALOR UNITÁRIO</label>
+						<textarea type="text" id="produto" disabled></textarea>
+					</div>
+
+					<div class="lineInput">
+						<label>VALOR TOTAL</label>
+						<textarea type="text" id="produto" disabled></textarea> <!-- disabled ou readonly verificar-->
+					</div>
+				</div>
+				
+				<h1>Controle de Produtos</h1>
+				<button onclick="produto.confirmar()">Confirmar</button>
+				<button onclick="produto.excluir()">Excluir</button>
+				<a href="index.html"><button class="voltar">Voltar</button></a>
+
+			</section>
+
+		<script src="src/js/script.js"></script>
+
 	</body>
 	</html>
