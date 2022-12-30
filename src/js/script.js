@@ -14,6 +14,7 @@ salvar(){
 		this.adicionar(produto);
 	}
 		this.listaTabela();
+		this.limpar();
 }
 
 adicionar(produto){
@@ -35,6 +36,7 @@ lerDados(){
 	produto.medida = document.getElementById('medida').value;
 	produto.fornecedor = document.getElementById('fornecedor').value;
 	produto.valorUnitario = document.getElementById('vlrUnit').value;
+	produto.valorTotal = produto.quantidade * produto.valorUnitario;
 
 	return produto;
 }
@@ -62,12 +64,20 @@ validaCampos(produto){
 	return true;
 }
 
-cancelar(){
+limpar(){
 
+	produto.nomeProduto = document.getElementById('produto').value = '';
+	produto.descricao = document.getElementById('descricao').value = '';
+	produto.quantidade = document.getElementById('qtde').value = '';
+	produto.medida = document.getElementById('medida').value = '';
+	produto.fornecedor = document.getElementById('fornecedor').value = '';
+	produto.valorUnitario = document.getElementById('vlrUnit').value = '';
 }
 
 	listaTabela(){
 		let tbody = document.getElementById('tbody');
+
+		tbody.innerText = "";
 
 		for(let i = 0; i < this.arrayProdutos.length; i++){
 			let tr = tbody.insertRow(); /*insere uma nova linha*/
@@ -79,10 +89,7 @@ cancelar(){
 			let td_medida = tr.insertCell();
 			let td_fornecedor = tr.insertCell();
 			let td_vlrUnitario = tr.insertCell();
-
-			produto.valorTotal = this.calcularValorTotal();
 			let td_vlrTotal = tr.insertCell();
-	
 
 			td_id.innerText = this.arrayProdutos[i].id;
 			td_nome.innerText = this.arrayProdutos[i].nomeProduto;
@@ -92,14 +99,14 @@ cancelar(){
 			td_fornecedor.innerText = this.arrayProdutos[i].fornecedor;
 			td_vlrUnitario.innerText = this.arrayProdutos[i].valorUnitario;
 			td_vlrTotal.innerText = this.arrayProdutos[i].valorTotal;
+
 		}
 	}
 
 
 /*O método não está funcionando*/
 calcularValorTotal(){
-	return produto.valorTotal = produto.valorUnitario * produto.quantidade;
-
+	return document.getElementById('vlrUnitario') * document.getElementById('qtde');
 }
 
 }
