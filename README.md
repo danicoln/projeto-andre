@@ -17,7 +17,7 @@ Aplicação para cadastro de materiais, registro de entrada e saída.
 # Acessar a aplicação
 
 <div>
-  <a href="https://danicoln.github.io/entrada-saida-materiais/index.html" target="_blank">Acesse aqui a aplicação</a>
+  <a href="https://danicoln.github.io/projeto-andre/" target="_blank">Acesse aqui a aplicação</a>
 <div/>
 
 # Autor
