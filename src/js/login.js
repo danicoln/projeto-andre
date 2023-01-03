@@ -18,8 +18,16 @@ function logar(){
 
     if(login == "admin" && senha == "admin"){
         alert("Login efetuado com sucesso");
-        location.href = "index.html";
+        location.href = "home.html";
     } else{
         alert("Usuário ou senha inválidos!");
+    }   
+}
+
+function deslogar(){    
+    var logado = this.logar();
+
+    if(logado == false){
+        alert("Você saiu do sistema!");
     }
 }

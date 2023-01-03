@@ -1,46 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-	
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="src/css/reset.css">
-		<link rel="stylesheet" href="src/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="src/css/reset.css">
+	<link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
 
+    <title>Login</title>
+</head>
+<body>
+    <div class="main-login" id="mainLogin">
+        <div class="left-login">
+            <h1>Faça o login<br> E controle seu estoque!</h1>
+            <img src="src/imagens/login-animate.svg" class="login-animate" alt="Login animado">
+        </div>
 
-		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap" rel="stylesheet">
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input id="login" type="text" name="usuario" placeholder="Usuário" class="inputs required">
+                </div>
 
-		<title>Controle de Material</title>
-	</head>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" name="senha" placeholder="Senha" class="inputs required">
+                </div>
+                <button onclick="logar()" class="btn-login">Login</button>
+            </div>
+        </div>
+    </div>
 
-	<body>
-
-		<section class="cabecalho">
-			<header>
-				<img src="src/imagens/logo.svg" width="280px" height="220px">
-				<h1>Controle de Entrada e Saída de Materiais</h1>
-			</header>
-		</section>
-		
-		<section class="corpo-menu">
-			<main class="main">
-				<div class="buttons">
-					<a href="cadastro-de-materiais.html"><button class="cadastrar-materiais">Cadastrar Materiais</button></a> <!-- botao --> 
-					<a href="registra-entrada-materiais.html"><button class="registra-entrada">Registrar Entrada de Materiais</button></a> <!-- botao --> 
-					<a href="registra-saida-materiais.html"><button class="registra-saida">Registrar Saída de Materiais</button></a><!-- botao --> 
-					<a href="login.html"><button class="sair">Sair</button></a><!-- botao --> 
-				</div>
-			</main>
-		</section>
-
-	<script src="src/js/script.js"></script>
-		<section class="footer">
-			<footer>
-				&copy; Desenvolvido por danicoln. Todos os direitos reservados.
-			</footer>
-		</section>
-
-	</body>
-
+    <script src="src/js/login.js"></script>
+</body>
 </html>
