@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/danicoln/entrada-saida-materiais/04d4a6ac35b3c36f45f5e1bc85834de2e11e6eaa/src/imagens/logo.svg" alt="Logo ELROI">
+<img src="https://raw.githubusercontent.com/danicoln/projeto-andre/fd35ecac7933492bc993b7b1f447bb1afccf05e3/src/imagens/logo.svg" alt="Logo ELROI">
 
 ![NPM](https://img.shields.io/badge/Status-em%20desenvolvimento-green)
 
